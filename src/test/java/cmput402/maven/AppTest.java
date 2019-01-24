@@ -28,11 +28,9 @@ public class AppTest
         return new TestSuite( AppTest.class );
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+    public void testAdd() {
+    	App app = new App();
+    	assert(5 == app.add(2, 3));
     }
+    
 }
